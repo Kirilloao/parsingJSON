@@ -9,16 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var starWarsPlanetsURL = "https://swapi.dev/api/planets/3/"
-
-    @IBAction func showDataDidTapped() {
-        fetchPlanets()
+    let url = "https://swapi.dev/api/planets"
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+      fetchPlanets()
     }
 }
 
 extension ViewController {
     private func fetchPlanets() {
-        guard let url = URL(string: starWarsPlanetsURL) else { return }
+        guard let url = URL(string: url) else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
