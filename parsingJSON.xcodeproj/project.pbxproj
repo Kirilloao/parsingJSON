@@ -39,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CB5502129A5054D006A89D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CD7F9BD299FD20E000AB513 /* Planets.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CB5502229A50555006A89D0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3CD7F9AF299FCF9E000AB513 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3CB5502329A50574006A89D0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3CD7F9AD299FCF9E000AB513 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		3CD7F99D299FCF9E000AB513 = {
 			isa = PBXGroup;
 			children = (
@@ -60,9 +84,9 @@
 			children = (
 				3CD7F9A9299FCF9E000AB513 /* AppDelegate.swift */,
 				3CD7F9AB299FCF9E000AB513 /* SceneDelegate.swift */,
-				3CD7F9AD299FCF9E000AB513 /* ViewController.swift */,
-				3CD7F9BD299FD20E000AB513 /* Planets.swift */,
-				3CD7F9AF299FCF9E000AB513 /* Main.storyboard */,
+				3CB5502329A50574006A89D0 /* ViewControllers */,
+				3CB5502129A5054D006A89D0 /* Models */,
+				3CB5502229A50555006A89D0 /* Storyboards */,
 				3CD7F9B2299FCF9F000AB513 /* Assets.xcassets */,
 				3CD7F9B4299FCF9F000AB513 /* LaunchScreen.storyboard */,
 				3CD7F9B7299FCF9F000AB513 /* Info.plist */,

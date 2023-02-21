@@ -22,22 +22,20 @@ extension ViewController {
         
         let session = URLSession(configuration: .default)
         
-        let task = session.dataTask(with: url) {  data, _, error in
+        URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
             
-            let jsonDecoder = JSONDecoder()
-            
             do {
-                let planets = try jsonDecoder.decode(Planets.self, from: data)
+                let planets = try JSONDecoder().decode(Planets.self, from: data)
                 print(planets)
                 
             } catch {
                 print(error)
             }
-        }
-        task.resume()
+            
+        }.resume()
     }
 }
