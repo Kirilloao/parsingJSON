@@ -20,8 +20,6 @@ extension ViewController {
     private func fetchPlanets() {
         guard let url = URL(string: starWarsPlanetsURL) else { return }
         
-        let session = URLSession(configuration: .default)
-        
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
                 print(error?.localizedDescription ?? "No error description")
